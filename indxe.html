@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة روما للكيماويات</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">شركة روما للكيماويات</div>
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#about">نبذة عن الشركة</a></li>
+                <li><a href="#products">منتجاتنا</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-button" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <!-- القائمة الجانبية -->
+    <aside class="mobile-menu" id="mobileMenu">
+        <button class="close-button" onclick="toggleMenu()">✖</button>
+        <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#about">نبذة عن الشركة</a></li>
+            <li><a href="#products">منتجاتنا</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </aside>
+
+    <!-- السليدر -->
+    
+        <div class="slides">
+            <div class="slide active">
+                <img src="https://h.top4top.io/p_32209gl221.png" alt="صودا قشور">
+                <div class="slide-caption">صودا قشور</div>
+            </div>
+            <div class="slide">
+                <img src="https://j.top4top.io/p_3220a4l2q3.png" alt="صودا سائلة">
+                <div class="slide-caption">صودا سائلة</div>
+            </div>
+            <div class="slide">
+                <img src="https://i.top4top.io/p_3220t49aa2.png" alt="كلور خام">
+                <div class="slide-caption">كلور خام</div>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>نبذة عن الشركة</h2>
+        <p>نحن متخصصون في تقديم حلول كيماوية تشمل الصودا الكاوية والكلور الخام بأعلى معايير الجودة.</p>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section id="products" class="products">
+        <h2 class="section-title">منتجاتنا</h2>
+        <div class="products-container">
+            <div class="product-card">
+                <img src="https://h.top4top.io/p_32209gl221.png" alt="صودا قشور">
+                <h3>صودا قشور</h3>
+                <p>مادة أساسية تستخدم في الصناعات الكيميائية المختلفة.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://j.top4top.io/p_3220a4l2q3.png" alt="صودا سائلة">
+                <h3>صودا سائلة</h3>
+                <p>تُستخدم في إنتاج المنظفات والصناعات الغذائية.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://i.top4top.io/p_3220t49aa2.png" alt="كلور خام">
+                <h3>كلور خام</h3>
+                <p>مركب ضروري لتعقيم المياه ومعالجة المواد الكيميائية.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>شركة روما للكيماويات</h3>
+                <p>العنوان: شارع الصناعة، المنطقة الصناعية، القاهرة، مصر</p>
+                <p>الهاتف: <a href="tel:+201234567890">+20 123 456 7890</a></p>
+                <p>البريد الإلكتروني: <a href="mailto:info@chemicalcompany.com">info@chemicalcompany.com</a></p>
+            </div>
+            <div class="footer-social">
+                <h4>تابعنا على</h4>
+                <div class="social-icons">
+                    <a href="https://wa.me/201234567890" target="_blank" class="icon whatsapp" aria-label="واتساب">
+                        <img src="https://j.top4top.io/p_3220q35qc1.png" alt="واتساب">
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="icon facebook" aria-label="فيسبوك">
+                        <img src="https://l.top4top.io/p_32200lp643.png" alt="فيسبوك">
+                    </a>
+                    <a href="https://t.me/username" target="_blank" class="icon telegram" aria-label="تليجرام">
+                        <img src="https://a.top4top.io/p_3220f1h754.png" alt="تليجرام">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="icon instagram" aria-label="إنستجرام">
+                        <img src="https://k.top4top.io/p_3220mjacs2.png" alt="إنستجرام">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2024 جميع الحقوق محفوظة - شركة روما للكيماويات</p>
+    </footer>
+
+</body>
+</html>
